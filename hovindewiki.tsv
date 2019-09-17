@@ -1,0 +1,713 @@
+No.	pageid	qid	deWikiTitle	HOV-String	Levenshtein	HovCodeinWD	HovCodeParsed	HOV_String_StatedAs	ZeroIsNotaSiedlung
+0:	1640	Q14819	Freiberg	Freiberg_(1)	4	16028			9
+1:	2996	Q2079	Leipzig	Leipzig_(1)	4	4105			30
+2:	3340	Q8738	Meißen	Meißen	0	10193			4
+3:	8144	Q3778	Zwickau	Zwickau	0	22154			6
+4:	12328	Q6477	Pirna	Pirna	0	11175			1
+5:	12626	Q8920	Hellerau	Hellerau	0	8086			1
+6:	14163	Q157095	Rothenburg/Oberlausitz	Rothenburg/O.L.	10	None	28096	Rothenburg/O.L.	4
+7:	15893	Q8762	Radebeul	Radebeul	0	8184			4
+8:	15927	Q8946	Pillnitz	Pillnitz	0	8168			1
+9:	15947	Q71180	Rochlitz	Rochlitz_(1)	4	6117			4
+10:	16976	Q4077	Görlitz	Görlitz_(1)	4	24018			16
+11:	17322	Q14835	Bautzen	Bautzen	0	23007			4
+12:	17803	Q12056	Oschatz	Oschatz	0	5142			4
+13:	18004	Q5870	Freital	Freital	0	8246			30
+14:	18011	Q6366	Pesterwitz	Pesterwitz_(Ober-)	8	None	8165	Pesterwitz (Ober-)	1
+15:	18597	Q12058	Schkeuditz	Schkeuditz	0	31019			1
+16:	19228	Q8248	Wilsdruff	Wilsdruff	0	10351			4
+17:	19305	Q157200	Zittau	Zittau	0	29094			9
+18:	19467	Q81760	Wittichenau	Wittichenau	0	25106			4
+19:	23097	Q81722	Kamenz	Kamenz	0	26055			4
+20:	25016	Q6483	Sebnitz	Sebnitz	0	11223			9
+21:	26131	Q8954	Striesen	Striesen	0	8219			1
+22:	27947	Q10744	Borna	Borna_(2)	4	None	1019	Borna (2)	4
+23:	29477	Q8215	Pretzschendorf	Pretzschendorf	0	7101			4
+24:	30928	Q17125	Niederfrohna	Niederfrohna	0	14029			1
+25:	31828	Q6448	Bannewitz	Bannewitz	0	8004			9
+26:	32371	Q8218	Rabenau (Sachsen)	Rabenau	10	None	8181	Rabenau	4
+27:	33806	Q8245	Tharandt	Tharandt	0	8220			4
+28:	35164	Q10762	Colditz	Colditz	0	3040			4
+29:	40231	Q1720959	Kaditz	Kaditz	0	8094			2
+30:	42486	Q10779	Zwenkau	Zwenkau	0	4221			4
+31:	44005	Q20233	Landkreis Döbeln	Landkreis Döbeln	0	None			0
+32:	44221	Q10770	Markranstädt	Markranstädt	0	4161			4
+33:	46539	Q2795	Chemnitz	Chemnitz	0	14016			20
+34:	53164	Q10784	Wurzen	Wurzen	0	3276			4
+35:	53286	Q8775	Riesa	Riesa	0	9157			4
+36:	57045	Q631101	Falkenhain (Lossatal)	Falkenhain (2)	8	None	3069	Falkenhain (2)	4
+37:	57466	Q165160	Niesky	Niesky	0	28073			6
+38:	57692	Q81717	Bischofswerda	Bischofswerda	0	23016			4
+39:	61762	Q46849	Reichenbach im Vogtland	Reichenbach/Vogtl.	7	None	20089	Reichenbach/Vogtl.	4
+40:	62291	Q8710	Gröditz	Reppis	6	None	9155	Reppis	4
+41:	62533	Q20079	Kirchberg (Sachsen)	Kirchberg_(4)	8	None	22064	Kirchberg (4)	4
+42:	68395	Q1516377	Geschichte Dresdens	Dresden-Altstadt	17	None	8044	Dresden-Altstadt	0
+43:	68924	Q8792	Strehla	Strehla_(2)	4	None	5205	Strehla (2)	4
+44:	73130	Q6406	Bad Schandau	Bad Schandau	0	11216			4
+45:	73371	Q20071	Glauchau	Glauchau	0	17029			4
+46:	81220	Q12062	Torgau	Torgau	0	30215			9
+47:	87303	Q502504	Oybin	Oybin,_Kurort	8	None	29060	Oybin, Kurort	1
+48:	87752	Q10780	Grimma	Grimma	0	3087			4
+49:	91226	Q46845	Oelsnitz/Vogtl.	Oelsnitz_(2)	7	None	19091	Oelsnitz (2)	9
+50:	91267	Q46853	Adorf/Vogtl.	Adorf	7	19001			1
+51:	91317	Q46742	Bösenbrunn	Bösenbrunn	0	19012			1
+52:	93980	Q1965921	Nassau (Frauenstein)	Nassau_(1)_(Nieder-_u._Ober-)	18	None	7085	Nassau (1) (Nieder- u. Ober-)	4
+53:	95132	Q81729	Radeberg	Radeberg	0	8183			4
+54:	95566	Q165131	Bad Muskau	Muskau,_Bad	9	None	28064	Muskau, Bad	4
+55:	95970	Q57944	Annaberg-Buchholz	Annaberg-Buchholz	0	12071			9
+56:	95994	Q668396	Mutzschen	Mutzschen	0	3155			1
+57:	96270	Q631428	Hohburg	Hohburg	0	3098			4
+58:	96578	Q10782	Markkleeberg	Markkleeberg	0	4091			4
+59:	96864	Q156768	Löbau	Löbau	0	27079			4
+60:	98311	Q701114	Wildenhain (Großenhain)	Wildenhain_(3)	11	None	9204	Wildenhain (3)	1
+61:	99618	Q81740	Lauta	Lauta_(1)	4	None	32002	Lauta (1)	4
+62:	100007	Q71163	Döbeln	Döbeln	0	2032			4
+63:	109125	Q10765	Geithain	Geithain	0	1058			1
+64:	110084	Q20070	Crimmitschau	Crimmitschau	0	22017			4
+65:	110249	Q10766	Groitzsch	Groitzsch_(2)	4	None	1069	Groitzsch (2)	4
+66:	111142	Q93234	Großharthau	Großharthau	0	23121			1
+67:	113337	Q12052	Delitzsch	Delitzsch	0	30032			4
+68:	116027	Q1877609	Luppa (Wermsdorf)	Luppa_(1),_(Deutsch-)	13	None	5105	Luppa (1), (Deutsch-)	1
+69:	120610	Q550212	Heyersdorf	Heyersdorf	0	22056			2
+70:	123214	Q17127	Reinsdorf (Sachsen)	Reinsdorf_(3)	8	None	22102	Reinsdorf (3)	1
+71:	126256	Q17123	Mülsen	Mülsen	0	17107			1
+72:	127017	Q702829	Friedersdorf (Spree)	Friedersdorf_(6)	6	None	27036	Friedersdorf (6)	4
+73:	127261	Q1069538	Chemnitz-Reichenhain	Reichenhain	9	None	14081	Reichenhain	1
+74:	129702	Q57936	Scheibenberg	Brünlasgüter	11	None	12006	Brünlasgüter	4
+75:	129925	Q20073	Hohenstein-Ernstthal	Hohenstein-Ernstthal	0	17041			9
+76:	131825	Q1315958	Großvoigtsberg	Großvoigtsberg	0	16119			1
+77:	133634	Q93268	Neukirch (bei Königsbrück)	Neukirch	18	26036			1
+78:	134897	Q8770	Radeburg	Radeburg	0	9147			4
+79:	135032	Q8956	Weißer Hirsch	Weißer Hirsch	0	8234			1
+80:	135378	Q8942	Mickten	Mickten_(Groß-)	8	None	8134	Mickten (Groß-)	3
+81:	135413	Q57903	Johanngeorgenstadt	Johanngeorgenstadt	0	21040			4
+82:	136072	Q1760584	Weißig (Dresden)	Weißig_(4)	8	None	8235	Weißig (4)	2
+83:	136130	Q57926	Oberwiesenthal	Oberwiesenthal	0	12068			9
+84:	137023	Q28407	Ziegelheim	Ziegelheim	0	17105			1
+85:	138146	Q71108	Frauenstein (Erzgebirge)	Frauenstein	13	None	7041	Frauenstein	4
+86:	138514	Q1495967	Gauernitz	Gauernitz	0	10072			1
+87:	141389	Q8243	Stolpen	Stolpen_(1)	4	None	11235	Stolpen (1)	4
+88:	142600	Q46843	Auerbach/Vogtl.	Auerbach/Vogtl.	0	13004			4
+89:	143229	Q262237	Morgenröthe-Rautenkranz	Morgenröthe-Rautenkranz	0	13061			4
+90:	143463	Q10771	Naunhof	Naunhof_(1)	4	None	3160	Naunhof (1)	4
+91:	143468	Q10739	Bad Lausick	Lausick,_Bad	9	1103			4
+92:	143470	Q10760	Brandis	Brandis	0	3029			4
+93:	143471	Q631108	Nerchau	Nerchau	0	3166			1
+94:	143478	Q10741	Bennewitz	 Bennewitz_(4)	5	1009			1
+95:	143480	Q10745	Borsdorf	Borsdorf	0	3025			1
+96:	143483	Q560850	Großbothen	Großbothen	0	3027			1
+97:	143486	Q1797015	Kühren-Burkartshain	Kühren-Burkartshain	0	3292			1
+98:	143488	Q10752	Machern	Machern	0	3140			1
+99:	143489	Q10756	Otterwisch	Otterwisch	0	3177			1
+100:	143490	Q10757	Parthenstein	Parthenstein	0	3293			1
+101:	143491	Q10759	Thallwitz	Thallwitz	0	3248			1
+102:	143492	Q819129	Thümmlitzwalde	Thümmlitzwalde	0	3296			1
+103:	143494	Q227216	Zschadraß	Zschadraß	0	3283			1
+104:	143497	Q10740	Belgershain	Belgershain	0	3014			1
+105:	143499	Q1548027	Großbardau	Großbardau	0	3010			1
+106:	143527	Q16041	Cavertitz	Cavertitz	0	5028			1
+107:	143528	Q16054	Liebschützberg	Liebschützberg	0	5241			1
+108:	143539	Q16067	Wermsdorf	Wermsdorf	0	5224			1
+109:	143540	Q16066	Trossin	Trossin	0	30219			1
+110:	143542	Q16060	Naundorf (Sachsen)	Naundorf (24)	7	None	5128	Naundorf (24)	1
+111:	143544	Q16058	Mockrehna	Mockrehna	0	30137			1
+112:	143546	Q745159	Pflückuff	Pflückuff_(4)	4	30456			1
+113:	143547	Q633813	Sornzig-Ablaß	Sornzig-Ablaß	0	5242			1
+114:	143585	Q58006	Zschopau	Zschopau	0	15084			9
+115:	143985	Q57953	Schwarzenberg/Erzgeb.	Schwarzenberg/Erzgeb.	0	21076			9
+116:	145599	Q8955	Übigau	Übigau	0	8226			1
+117:	145744	Q71021	Niederwiesa	Niederwiesa	0	15079			1
+118:	146635	Q6715	Heidenau (Sachsen)	Heidenau	10	11088			4
+119:	146996	Q8931	Klotzsche	Klotzsche	0	8099			2
+120:	149066	Q572595	Neugersdorf	Altgersdorf	3	None	27043	Gersdorf, Alt-	4
+121:	149093	Q165134	Bernstadt a. d. Eigen	Bernstadt a. d. Eigen	0	27004			4
+122:	149095	Q165140	Herrnhut	Herrnhut	0	27052			4
+123:	152862	Q160599	Unwürde	Unwürde	0	27137			1
+124:	152870	Q160874	Kittlitz (Löbau)	Kittlitz	8	None	27060	Kittlitz	1
+125:	156331	Q8714	Großenhain	Großenhain	0	9060			4
+126:	157499	Q1678568	Jahnshain	Jahnshain	0	6066			1
+127:	159776	Q165153	Neusalza-Spremberg	Sonneberg	13	None	27126	Sonneberg	4
+128:	159860	Q506114	Schönbach (Sachsen)	Schönbach_(3)	8	None	27116	Schönbach (3)	1
+129:	161418	Q12055	Eilenburg	Eilenburg	0	30048			9
+130:	162395	Q502520	Dürrhennersdorf	Dürrhennersdorf	0	27050			1
+131:	162396	Q165195	Seifhennersdorf	Hennersdorf,_Seif-	12	None	29024	Hennersdorf, Seif-	9
+132:	162397	Q165167	Ostritz	Ostritz	0	29059			4
+133:	164260	Q70949	Eppendorf	Eppendorf	0	15017			1
+134:	166066	Q46903	Schöneck/Vogtl.	Schöneck/Vogtl.	0	19116			4
+135:	166298	Q46866	Klingenthal	Klingenthal	0	13051			1
+136:	166621	Q93295	Sohland an der Spree	Sohland_a._d._Spree	6	23274			1
+137:	168523	Q1069512	Chemnitz-Harthau	Harthau_(1)	13	None	14038	Harthau (1)	1
+138:	169062	Q44498	Weißwasser/Oberlausitz	Weißwasser	12	None	28132	Weißwasser/O.L.	4
+139:	171391	Q57846	Tannenberg (Sachsen)	Siebenhöfen	15	None	12056	Siebenhöfen	1
+140:	171591	Q436724	Altenberg (Erzgebirge)	Altenberg (1)	10	7145			4
+141:	173309	Q12041	Bad Düben	Bad Düben	0	30046			4
+142:	173513	Q502562	Oppach	Oppach	0	27093			1
+143:	173537	Q502524	Eibau	Eibau_(Alt-)	7	None	27029	Eibau (Alt-)	4
+144:	173542	Q1620424	Hirschfelde (Zittau)	Hirschfelde	9	None	29029	Hirschfelde	1
+145:	173544	Q502508	Niedercunnersdorf	Niedercunnersdorf	0	27017			1
+146:	173546	Q572527	Großschönau (Sachsen)	Großschönau	10	None	29076	Schönau, Groß-	4
+147:	173551	Q502493	Hainewalde	Hainewalde	0	29020			1
+148:	173553	Q502686	Leutersdorf (Oberlausitz)	Leutersdorf	14	None	29042	Leutersdorf	1
+149:	173556	Q506142	Mittelherwigsdorf	Herwigsdorf,_Mittel-	16	None	29027	Herwigsdorf, Mittel-	1
+150:	173579	Q544821	Jonsdorf	Jonsdorf,_Neu-	6	None	29035	Jonsdorf, Neu-	1
+151:	173613	Q71137	Lunzenau	Lunzenau	0	6084			4
+152:	174564	Q12050	Taucha	Taucha	0	4197			1
+153:	174673	Q157480	Ebersbach/Sa.	Ebersbach/Sa._(Alt-)	7	None	27026	Ebersbach/Sa. (Alt-)	1
+154:	175120	Q1069506	Chemnitz-Gablenz	Gablenz_(2)	13	None	14032	Gablenz (2)	1
+155:	175207	Q70964	Halsbrücke	Halsbrücke	0	16042			1
+156:	176438	Q20088	Wilkau-Haßlau	Wilkau-Haßlau	0	22150			4
+157:	176883	Q502568	Beiersdorf	Beiersdorf_(4)	4	None	27001	Beiersdorf (4)	1
+158:	177973	Q57948	Aue (Sachsen)	Aue	10	None	21008	Aue	16
+159:	178173	Q93276	Ottendorf-Okrilla	Ottendorf-Okrilla	0	8161			1
+160:	178968	Q502553	Berthelsdorf	Berthelsdorf_(5)	4	None	27005	Berthelsdorf (5)	9
+161:	179710	Q12047	Mügeln	Mügeln_(1)	4	None	5124	Mügeln (1)	1
+162:	180275	Q57933	Olbernhau	Olbernhau	0	18057			4
+163:	181907	Q1069498	Chemnitz-Erfenschlag	Erfenschlag	9	None	14024	Erfenschlag	1
+164:	182869	Q8751	Nossen	Nossen	0	10219			4
+165:	183110	Q896356	Connewitz	Connewitz	0	4022			1
+166:	183115	Q2568383	Wiederitzsch	Wiederitzsch	0	4208			1
+167:	183641	Q71090	Augustusburg	Augustusburg	0	15004			4
+168:	183971	Q12043	Dahlen (Sachsen)	Dahlen	10	None	5035	Dahlen	4
+169:	184673	Q896964	Reitzenhain (Marienberg)	Reitzenhain_(2)	11	None	18065	Reitzenhain (2)	1
+170:	185188	Q544955	Lawalde	Lawalde_(Nieder-,_Ober-)	17	None	27076	Lawalde (Nieder-, Ober-)	1
+171:	185189	Q502696	Großhennersdorf	Großhennersdorf	0	27051			1
+172:	185190	Q502454	Großschweidnitz	Großschweidnitz	0	27120			1
+173:	185191	Q502461	Bertsdorf-Hörnitz	Bertsdorf-Hörnitz	0	29096			1
+174:	185193	Q502668	Rosenbach (Oberlausitz)	Rosenbach	14	None	27150	Rosenbach	1
+175:	185218	Q503163	Schönau-Berzdorf auf dem Eigen	Schönau-Berzdorf_a._d._Eigen	7	27151			1
+176:	185617	Q8240	Stadt Wehlen	Stadt Wehlen	0	11253			1
+177:	187633	Q2556716	Weixdorf (Ortschaft)	Weixdorf	12	None	8239	Weixdorf	2
+178:	187721	Q16056	Löbnitz (Sachsen)	Löbnitz (1)	7	None	30126	Löbnitz (1)	1
+179:	188164	Q8693	Coswig (Sachsen)	Coswig_(1)	8	None	10045	Coswig (1)	4
+180:	191942	Q71129	Hartha	Hartha_(1)	4	None	2082	Hartha (1)	4
+181:	192269	Q57876	Ehrenfriedersdorf	Ehrenfriedersdorf	0	12014			4
+182:	192272	Q57885	Elterlein	Elterlein	0	12015			4
+183:	192273	Q57891	Geyer	Geyer	0	12018			4
+184:	192274	Q57908	Jöhstadt	Jöhstadt	0	12028			9
+185:	192275	Q57939	Schlettau	Schlettau_(1)	4	12048			4
+186:	192277	Q57996	Thum	Thum,_Stadt	7	None	12062	Thum, Stadt	4
+187:	192279	Q57739	Crottendorf	Crottendorf_(1)	4	None	12011	Crottendorf (1)	1
+188:	192282	Q57801	Mildenau	Mildenau	0	12033			1
+189:	192283	Q57851	Thermalbad Wiesenbad	Wiesenbad,_Thermalbad	14	None	12066	Wiesenbad, Thermalbad	1
+190:	192288	Q57757	Gelenau/Erzgeb.	Gelenau/Erzgeb.	0	12017			1
+191:	192291	Q57797	Königswalde	Königswalde_(1)	4	None	12029	Königswalde (1)	1
+192:	192325	Q57881	Eibenstock	Eibenstock	0	21024			4
+193:	192327	Q1552242	Grünhain	Grünhain	0	21032			4
+194:	192332	Q57941	Schneeberg (Erzgebirge)	Schneeberg	13	None	21073	Schneeberg	4
+195:	192334	Q57711	Bad Schlema	Schlema,_Ober-	11	None	21072	Schlema, Ober-	6
+196:	192335	Q57717	Bernsbach	Bernsbach	0	21012			4
+197:	192336	Q57828	Schönheide	Schönheide	0	21074			1
+198:	192576	Q8897	Blasewitz	Blasewitz	0	8009			1
+199:	192580	Q2112285	Prohlis	Prohlis	0	8179			1
+200:	193124	Q81735	Elstra	Elstra	0	26025			4
+201:	193141	Q6462	Dippoldiswalde	Dippoldiswalde	0	7029			9
+202:	194931	Q8939	Loschwitz	Loschwitz	0	8123			1
+203:	197022	Q6696	Glashütte (Sachsen)	Glashütte	10	None	7047	Glashütte	9
+204:	200006	Q58002	Zwönitz	Zwönitz	0	14106			4
+205:	202009	Q1585394	Mühlleithen (Klingenthal)	Mühlleithen (Klingenthal)	0	None			1
+206:	202928	Q1015045	Burghausen (Leipzig)	Burghausen_(2)	8	None	4020	Burghausen (2)	1
+207:	203084	Q12045	Dommitzsch	Dommitzsch	0	30041			4
+208:	203086	Q12048	Schildau	Schildau,_Gneisenaustadt	16	None	30188	Schildau, Gneisenaustadt	1
+209:	203637	Q2210569	Sachsenberg-Georgenthal	Sachsenberg-Georgenthal	0	13091			1
+210:	203647	Q28089444	Brunndöbra	Brunndöbra	0	13014			1
+211:	204112	Q205138	Zinnwald-Georgenfeld	Zinnwald-Georgenfeld	0	7147			4
+212:	206199	Q20076	Limbach-Oberfrohna	Limbach-Oberfrohna	0	14108			4
+213:	208371	Q572568	Schirgiswalde	Schirgiswalde	0	23253			4
+214:	208420	Q81753	Weißenberg	Weißenberg	0	27141			9
+215:	208465	Q81756	Wilthen	Wilthen	0	23325			4
+216:	208506	Q93289	Rammenau	Rammenau	0	23233			1
+217:	208543	Q93231	Frankenthal (Sachsen)	Frankenthal	10	None	23095	Frankenthal	1
+218:	209303	Q93243	Guttau	Guttau	0	23114			1
+219:	209315	Q93260	Malschwitz	Malschwitz	0	23168			1
+220:	210342	Q544931	Crostau	Crostau	0	23058			4
+221:	210368	Q550175	Kirschau	Kirschau	0	23138			4
+222:	212532	Q20078	Hartenstein (Sachsen)	Hartenstein	10	None	22046	Hartenstein	4
+223:	212542	Q20077	Werdau	Werdau_(2)	4	None	22144	Werdau (2)	4
+224:	212544	Q20087	Wildenfels	Wildenfels	0	22148			4
+225:	213197	Q17116	Fraureuth	Fraureuth	0	32006			2
+226:	213201	Q17120	Langenbernsdorf	Langenbernsdorf	0	22007			2
+227:	213206	Q17121	Langenweißbach	Grünau_(1)	13	None	22040	Grünau (1)	1
+228:	213214	Q17122	Lichtentanne	Lichtentanne	0	22078			2
+229:	213230	Q17124	Neukirchen/Pleiße	Neukirchen/Pleiße	0	22086			1
+230:	213239	Q17114	Crinitzberg	Lauterholz	11	22156			1
+231:	213250	Q17118	Hartmannsdorf bei Kirchberg	Hartmannsdorf_b._Kirchberg	4	None	22048	Hartmannsdorf b. Kirchberg	1
+232:	213271	Q17119	Hirschfeld (Sachsen)	Voigtsgrün_(1)	18	None	22136	Voigtsgrün (1)	1
+233:	213283	Q17115	Dennheritz	Dennheritz	0	17014			1
+234:	214915	Q93216	Burkau	Burkau	0	23037			1
+235:	214925	Q71141	Oederan	Oederan	0	15066			4
+236:	214949	Q93225	Cunewalde	Cunewalde	0	27012			1
+237:	214979	Q93232	Göda	Göda	0	23103			1
+238:	215778	Q93226	Demitz-Thumitz	Demitz-Thumitz	0	23063			1
+239:	215797	Q93228	Doberschau-Gaußig	Doberschau-Gaußig	0	23343			1
+240:	216567	Q93233	Großdubrau	Großdubrau	0	23082			1
+241:	216595	Q93240	Großpostwitz	Großpostwitz/O.L.	5	23211			1
+242:	216804	Q20083	Meerane	Meerane	0	17057			4
+243:	217986	Q20084	Oberlungwitz	Oberlungwitz	0	17055			4
+244:	217990	Q20085	Waldenburg (Sachsen)	Waldenburg	10	None	17093	Waldenburg	1
+245:	217997	Q17129	Schönberg (Sachsen)	Schönberg_(2)	8	None	17081	Schönberg (2)	1
+246:	217999	Q17113	Callenberg	Callenberg_(1)	4	None	17007	Callenberg (1)	1
+247:	218207	Q17117	Gersdorf	Gersdorf_(4)	4	None	17026	Gersdorf (4)	1
+248:	218212	Q17130	St. Egidien	St. Egidien	0	17017			1
+249:	218217	Q17126	Oberwiera	Oberwiera	0	17100			1
+250:	218220	Q17128	Remse	Remse	0	17071			1
+251:	218306	Q57842	Stützengrün	Stützengrün	0	21096			1
+252:	218321	Q814665	Beierfeld	Beierfeld	0	21010			1
+253:	218325	Q57731	Breitenbrunn/Erzgeb.	Breitenbrunn	8	None	21016	Breitenbrunn	1
+254:	218326	Q1355208	Erlabrunn (Breitenbrunn)	Erlabrunn	15	None	21026	Erlabrunn	4
+255:	218334	Q1284571	Rittersgrün	Rittersgrün	0	21065			4
+256:	218336	Q703777	Markersbach	Markersbach_(2)	4	None	21049	Markersbach (2)	1
+257:	218859	Q705414	Pöhla (Schwarzenberg)	Pöhla,_Klein-	15	None	21063	Pöhla, Klein-	1
+258:	218862	Q701129	Raschau	Raschau_(2)	4	None	21064	Raschau (2)	1
+259:	218870	Q57857	Zschorlau	Zschorlau	0	21093			1
+260:	218874	Q57720	Bockau	Bockau	0	21015			1
+261:	218885	Q57911	Lauter (Lauter-Bernsbach)	Lauter/Sa.	18	None	21045	Lauter/Sa.	4
+262:	220123	Q93285	Räckelwitz	Räckelwitz	0	26103			1
+263:	221052	Q93270	Neukirch/Lausitz	Neukirch/Lausitz	0	23190			1
+264:	222111	Q93250	Königswartha	Königswartha	0	23140			1
+265:	222223	Q81739	Königsbrück	Königsbrück	0	26059			4
+266:	222399	Q28051772	Quittenbach	Quittenbach	0	13079			1
+267:	222677	Q93265	Neschwitz	Neschwitz_(1)	4	None	23185	Neschwitz (1)	1
+268:	223431	Q93271	Obergurig	Obergurig	0	23113			1
+269:	224593	Q93291	Schmölln-Putzkau	Schmölln-Putzkau	0	23342			1
+270:	224762	Q93283	Puschwitz	Puschwitz_(1)	4	None	23222	Puschwitz (1)	1
+271:	224774	Q93286	Radibor	Radibor	0	23232			1
+272:	226218	Q2133428	Raun	Raun	0	19100			1
+273:	227223	Q93279	Panschwitz-Kuckau	Panschwitz-Kuckau	0	26166			1
+274:	228606	Q1804972	Langenau (Brand-Erbisdorf)	Langenau,_Ober-	16	None	16062	Langenau, Ober-	4
+275:	228696	Q1167976	Kötzschenbroda	Kötzschenbroda	0	8102			1
+276:	228763	Q250700	Jugel	Jugel (Ober-, Unter-)	16	None	21041	Jugel (Ober-, Unter-)	1
+277:	229720	Q206739	Zitzschewig	Zitzschewig	0	8251			1
+278:	229733	Q1988244	Niederlößnitz (Radebeul)	Lößnitz,_Nieder-_(1)	17	None	8125	Lößnitz, Nieder- (1)	1
+279:	229743	Q1466523	Fürstenhain	Fürstenhain	0	8059			1
+280:	229747	Q1416010	Lindenau (Radebeul)	Lindenau_(2)	9	None	8117	Lindenau (2)	1
+281:	229756	Q1691815	Naundorf (Radebeul)	Naundorf_(11)	9	None	8141	Naundorf (11)	1
+282:	229865	Q17112	Bernsdorf (Landkreis Zwickau)	Bernsdorf_(3)	18	None	17003	Bernsdorf (3)	1
+283:	231700	Q8734	Lommatzsch	Lommatzsch	0	10172			4
+284:	235120	Q12042	Belgern	Belgern_(1)	4	None	30015	Belgern (1)	1
+285:	235128	Q16029	Arzberg (Sachsen)	Arzberg	10	None	30003	Arzberg	1
+286:	235140	Q16032	Beilrode	Beilrode	0	30014			1
+287:	235143	Q16046	Elsnig	Elsnig	0	30049			1
+288:	235144	Q16044	Dreiheide	Dreiheide	0	30043			1
+289:	235145	Q16071	Zinna	Zinna	0	30258			1
+290:	235183	Q70934	Altmittweida	Altmittweida	0	6094			1
+291:	235191	Q93210	Arnsdorf	Arnsdorf_(6)	4	None	8001	Arnsdorf (6)	1
+292:	235205	Q46501	Bad Brambach	Bad Brambach	0	19013			1
+293:	235258	Q46856	Bad Elster	Bad Elster	0	19030			6
+294:	235260	Q46506	Bergen (Vogtland)	Bergen (3)	8	None	13008	Bergen (3)	1
+295:	235265	Q659002	Burgstein	Burgstein	0	20006			1
+296:	235268	Q46745	Eichigt	Eichigt, Unter-	8	None	19029	Eichigt, Unter-	1
+297:	235270	Q46749	Ellefeld	Ellefeld	0	13020			1
+298:	235274	Q46869	Lengenfeld (Vogtland)	Lengenfeld	11	None	13057	Lengenfeld	4
+299:	235390	Q663696	Kitzen (Pegau)	Kitzen (Pegau)	0	None			1
+300:	235637	Q93223	Crostwitz	Crostwitz	0	26018			4
+301:	236148	Q16061	Neukyhna	Neukyhna	0	30112			1
+302:	236150	Q16070	Wiedemar	Wiedemar_(Groß-,_Klein-)	16	None	30233	Wiedemar (Groß-, Klein-)	1
+303:	236152	Q16074	Zwochau	Zwochau_(1)	4	None	30257	Zwochau (1)	1
+304:	236157	Q16047	Jesewitz	Jesewitz	0	30079			1
+305:	236163	Q16072	Zschepplin	Zschepplin	0	30251			1
+306:	236166	Q16049	Krostitz	Krostitz_(1)	4	None	30104	Krostitz (1)	1
+307:	236169	Q16065	Schönwölkau	Schönwölkau	0	30275			1
+308:	236170	Q518405	Kossa	Kossa	0	30260			1
+309:	236173	Q16051	Laußig	Laußig	0	30115			1
+310:	236175	Q16043	Doberschütz	Doberschütz_(3)	4	None	30036	Doberschütz (3)	1
+311:	236178	Q16063	Rackwitz	Rackwitz_(2)	4	None	30175	Rackwitz (2)	1
+312:	238283	Q1519026	Plagwitz (Leipzig)	Plagwitz_(1)	8	None	4147	Plagwitz (1)	1
+313:	239084	Q8697	Diera-Zehren	Diera-Zehren	0	10379			1
+314:	239086	Q8720	Käbschütztal	Käbschütztal	0	10126			1
+315:	239087	Q8726	Klipphausen	Klipphausen	0	10144			1
+316:	239089	Q8746	Niederau	Niederau	0	10215			1
+317:	239090	Q631098	Triebischtal (Klipphausen)	Triebischtal	14	None	10330	Triebischtal	1
+318:	239093	Q8831	Weinböhla	Weinböhla	0	10028			1
+319:	239096	Q8722	Ketzerbachtal	Ketzerbachtal	0	10140			1
+320:	239098	Q8732	Leuben-Schleinitz	Leuben-Schleinitz	0	10164			1
+321:	239103	Q8718	Hirschstein	Neuhirschstein	4	None	10108	Hirschstein, Neu-	1
+322:	239106	Q8759	Priestewitz	Priestewitz	0	9142			1
+323:	239107	Q8783	Röderaue	Röderaue	0	9161			1
+324:	239109	Q8790	Stauchitz	Stauchitz	0	5200			1
+325:	239112	Q8744	Nauwalde	Nauwalde	0	9118			1
+326:	239119	Q8706	Glaubitz	Glaubitz	0	9050			1
+327:	239120	Q8756	Nünchritz	Nünchritz	0	9125			1
+328:	239124	Q8834	Wülknitz	Wülknitz	0	9207			1
+329:	239126	Q8730	Lampertswalde	Lampertswalde_(2)	4	None	9083	Lampertswalde (2)	1
+330:	239480	Q10776	Rötha	Rötha	0	1174			9
+331:	242144	Q123438	Bogatynia	Reichenau_(5)	12	None	29066	Reichenau (5)	4
+332:	243696	Q572589	Wiednitz	Wiednitz	0	25105			1
+333:	246917	Q81743	Pulsnitz	Pulsnitz	0	26100			6
+334:	247475	Q71145	Penig	Penig	0	6108			4
+335:	249166	Q57714	Bärenstein (Erzgebirge)	Bärenstein_(3)	11	None	12003	Bärenstein (3)	1
+336:	249178	Q71159	Brand-Erbisdorf	Erbisdorf	6	16005			9
+337:	249184	Q93211	Bretnig-Hauswalde	Bretnig-Hauswalde	0	26161			1
+338:	249186	Q1776887	Knappensee (Gemeinde)	Knappensee	11	None	25113	Knappensee	4
+339:	249187	Q93254	Laußnitz	Laußnitz	0	26066			1
+340:	249193	Q6307	Bad Gottleuba-Berggießhübel	Bad Gottleuba-Berggießhübel	0	11290			4
+341:	249199	Q8244	Struppen	Struppen	0	11237			1
+342:	253102	Q949240	Grünau (Leipzig)	Grünau_(2)	8	None	4223	Grünau (2)	1
+343:	254992	Q8909	Friedrichstadt (Dresden)	Ostra	21	None	8157	Ostra	1
+344:	255102	Q1549570	Großsedlitz	Großsedlitz	0	11224			1
+345:	258476	Q316159	Wiederau (Pegau)	Wiederau_(3)	6	1219			1
+346:	259874	Q47035	Thonhausen	Thonhausen_(sächs._Ant._)	15	None	22132	Thonhausen (sächs. Ant. )	1
+347:	261125	Q895902	Krumhermersdorf	Krumhermersdorf	0	15036			1
+348:	261726	Q6685	Dorfhain	Dorfhain	0	8040			1
+349:	262602	Q2105127	Portitz	Portitz	0	4154			1
+350:	263165	Q1725390	Waltersdorf (Bad Schandau)	Waltersdorf/Sächs. Schw.	13	None	11250	Waltersdorf/Sächs. Schw.	4
+351:	263227	Q581728	Frauendorf (Amt Ortrand)	Frauendorf_(4)	12	None	25023	Frauendorf (4)	1
+352:	264702	Q93294	Schwepnitz	Schwepnitz	0	26129			1
+353:	267709	Q8234	Rosenthal-Bielatal	Rosenthal-Bielatal	0	11286			1
+354:	268282	Q506136	Waldhufen	Waldhufen	0	28144			1
+355:	268535	Q1117549	Cossebaude (Ortsteil)	Cossebaude	11	None	8026	Cossebaude	1
+356:	270189	Q93287	Ralbitz-Rosenthal	Ralbitz-Rosenthal	0	26167			1
+357:	271674	Q71036	Rechenberg-Bienenmühle	Rechenberg-Bienenmühle	0	7107			1
+358:	271739	Q46909	Treuen	Treuen	0	13106			4
+359:	273649	Q157462	Reichenbach/O.L.	Reichenbach/O.L.	0	24053			4
+360:	274815	Q71133	Leisnig	Leisnig	0	2123			4
+361:	278813	Q46808	Tirpersdorf	Tirpersdorf	0	19126			1
+362:	280729	Q1805968	Nickern	Nickern	0	8146			1
+363:	283001	Q46875	Markneukirchen	Markneukirchen	0	19089			4
+364:	283938	Q700500	Reinhardtsgrimma	Reinhardtsgrimma	0	7113			4
+365:	284359	Q46792	Reuth (Weischlitz)	Reuth_(3)	11	None	20098	Reuth (3)	1
+366:	284876	Q8788	Schönfeld (Landkreis Meißen)	Schönfeld_(5)	17	9172			1
+367:	286581	Q1534378	Gohlis (Leipzig)	Gohlis_(2)	8	None	4062	Gohlis (2)	1
+368:	289450	Q46890	Netzschkau	Netzschkau	0	20071			4
+369:	289675	Q93300	Spreetal	Spreetal	0	25114			1
+370:	289809	Q1786346	Krakau (Sachsen)	Krakau_(2)	8	None	26062	Krakau (2)	1
+371:	291293	Q46900	Rodewisch	Rodewisch	0	13086			4
+372:	291305	Q5416160	Pausa-Mühltroff	Pausa/Vogtl.	9	None	20076	Pausa/Vogtl.	1
+373:	291564	Q1098953	Clausnitz	Clausnitz/Erzgeb.	8	None	16012	Clausnitz/Erzgeb.	1
+374:	294880	Q58022	Pobershau	Pobershau	0	18059			4
+375:	297010	Q46828	Zwota	Zwota	0	13123			1
+376:	297220	Q703119	Mücka	Mücka	0	28060			1
+377:	297250	Q502484	Hohendubrau	Hohendubrau	0	28146			1
+378:	297272	Q502478	Quitzdorf am See	Quitzdorf am See	0	28145			1
+379:	301976	Q10774	Regis-Breitingen	Regis-Breitingen	0	1169			4
+380:	302785	Q1988463	Niedersedlitz	Niedersedlitz	0	8208			1
+381:	311043	Q93264	Nebelschütz	Nebelschütz_(1)	4	None	26083	Nebelschütz (1)	1
+382:	311072	Q93302	Steina (Sachsen)	Weißbach_(3)	10	None	26149	Weißbach (3)	1
+383:	311086	Q93272	Ohorn	Ohorn	0	26090			1
+384:	312192	Q160212	Straßgräbchen	Straßgräbchen	0	26038			4
+385:	312204	Q81736	Großröhrsdorf	Röhrsdorf,_Groß-_(2)	16	None	26113	Röhrsdorf, Groß- (2)	4
+386:	312215	Q93293	Schönteichen	Schönteichen	0	26169			1
+387:	312219	Q1671588	Leippe-Torno	Leippe-Torno	0	25116			1
+388:	312222	Q93239	Großnaundorf	Großnaundorf	0	26081			1
+389:	312229	Q93257	Lichtenberg (Lausitz)	Kleindittmannsdorf	19	None	26021	Dittmannsdorf, Klein-	1
+390:	312240	Q700434	Oberlichtenau	Oberlichtenau_(2)	4	26070			1
+391:	312268	Q93247	Haselbachtal	Haselbachtal	0	26174			1
+392:	312554	Q502559	Olbersdorf	Olbersdorf	0	29057			1
+393:	312631	Q70954	Erlau (Sachsen)	Erlau (Sachsen)	0	None			1
+394:	313501	Q93258	Lohsa	Lohsa	0	25057			1
+395:	313508	Q93273	Oßling	Oßling	0	26092			1
+396:	313513	Q93305	Wachau (Sachsen)	Wachau_(1)	8	None	8228	Wachau (1)	1
+397:	313531	Q506150	Gablenz (Oberlausitz)	Gablenz_(1)	12	None	28018	Gablenz (1)	1
+398:	313793	Q544833	Boxberg/O.L.	Boxberg/O.L.	0	28005			1
+399:	314581	Q703140	Uhyst (Spree)	Uhyst_(Klein-)	7	None	25101	Uhyst (Klein-)	1
+400:	314663	Q506096	Königshain	Königshain_(1)	4	24025			1
+401:	315269	Q502548	Groß Düben	Groß Düben	0	28012			1
+402:	315278	Q544944	Hähnichen	Hähnichen	0	28023			1
+403:	315323	Q703135	Klitten	Klitten	0	28041			4
+404:	316328	Q58019	Sosa (Eibenstock)	Sosa	13	None	21078	Sosa	4
+405:	316376	Q502675	Krauschwitz (Sachsen)	Krauschwitz	10	None	28049	Krauschwitz	1
+406:	316389	Q502498	Kreba-Neudorf	Kreba-Neudorf	0	28143			1
+407:	316528	Q502472	Neißeaue	Neißeaue	0	24076			1
+408:	316532	Q502512	Rietschen	Rietschen	0	28094			1
+409:	316540	Q506123	Markersdorf (Sachsen)	Markersdorf_(3)	8	None	24037	Markersdorf (3)	1
+410:	316550	Q572576	Schleife (Ort)	Schleife	6	None	28104	Schleife	1
+411:	316560	Q506128	Weißkeißel	Weißkeißel	0	28131			1
+412:	316632	Q544870	Trebendorf	Trebendorf	0	28122			1
+413:	316661	Q525896	Sohland am Rotstein	Sohland_a._Rotstein	3	None	27122	Sohland a. Rotstein	1
+414:	317383	Q71117	Großschirma	Großschirma	0	16097			4
+415:	317412	Q1274445	Siebenlehn	Siebenlehn	0	10298			1
+416:	318158	Q1206161	Deutschgeorgenthal	Deutschgeorgenthal	0	16034			1
+417:	318176	Q8199	Liebstadt	Liebstadt	0	11134			1
+418:	318394	Q71012	Neuhausen/Erzgeb.	Neuhausen/Erzgeb.	0	16083			1
+419:	319380	Q315948	Kesselsdorf	Kesselsdorf	0	10138			4
+420:	322747	Q46811	Triebel/Vogtl.	Triebel/Vogtl.	0	19128			2
+421:	323343	Q1879617	Löbtau	Löbtau	0	8119			1
+422:	328689	Q8224	Rathen	Rathen,_Nieder-	9	None	11193	Rathen, Nieder-	1
+423:	328876	Q70990	Leubsdorf (Sachsen)	Leubsdorf	10	None	15047	Leubsdorf	1
+424:	330097	Q6474	Dohna	Dohna	0	11040			9
+425:	331796	Q8702	Ebersbach (bei Großenhain)	Ebersbach_(6)	15	None	9038	Ebersbach (6)	1
+426:	331828	Q8829	Tauscha	Würschnitz	7	None	9208	Würschnitz	1
+427:	331833	Q8830	Thiendorf	Thiendorf	0	9192			1
+428:	331924	Q136744	Zabeltitz	Zabeltitz	0	9209			1
+429:	332055	Q573553	Weißig am Raschütz	Weißig a. Raschütz	1	None	9200	Weißig a. Raschütz	1
+430:	333493	Q8205	Müglitztal	Müglitztal	0	11282			1
+431:	333963	Q71148	Roßwein	Roßwein	0	2213			4
+432:	334009	Q8210	Neustadt in Sachsen	Neustadt_i._Sa.	8	None	11162	Neustadt i. Sa.	4
+433:	334104	Q10748	Elstertrebnitz	Elstertrebnitz	0	1210			1
+434:	334213	Q57916	Lengefeld	Lengefeld,_Stadt	7	None	18047	Lengefeld, Stadt	1
+435:	335046	Q6780	Hohnstein (Sächsische Schweiz)	Hohnstein	21	None	11106	Hohnstein	9
+436:	335084	Q81732	Bernsdorf (Oberlausitz)	Bernsdorf_(4)	12	None	25005	Bernsdorf (4)	9
+437:	335402	Q71154	Waldheim	Waldheim	0	2258			4
+438:	335430	Q542047	Bockelwitz	Bockelwitz	0	2016			1
+439:	335437	Q554706	Ebersbach (Döbeln)	Ebersbach_(1)	7	None	2043	Ebersbach (1)	4
+440:	335451	Q554664	Kirnitzschtal	Kirnitzschtal	0	11280			1
+441:	335459	Q71030	Ostrau (Sachsen)	Ostrau_(4)	8	None	2179	Ostrau (4)	1
+442:	335472	Q70961	Großweitzschen	Großweitzschen	0	2263			1
+443:	335481	Q8202	Lohmen (Sachsen)	Lohmen	10	None	11139	Lohmen	1
+444:	335502	Q554695	Porschdorf	Porschdorf	0	11179			4
+445:	335505	Q71076	Zschaitz-Ottewig	Zschaitz-Ottewig	0	2290			1
+446:	335519	Q71017	Niederstriegis	Niederstriegis	0	2244			1
+447:	335529	Q71002	Mochau	Mochau	0	2152			1
+448:	335531	Q71072	Ziegra-Knobelsdorf	Ziegra-Knobelsdorf	0	2289			1
+449:	335566	Q8227	Rathmannsdorf	Rathmannsdorf	0	11196			4
+450:	335997	Q70946	Dorfchemnitz	Chemnitz,_Dorf-_b._Sayda	20	None	16010	Chemnitz, Dorf- b. Sayda	1
+451:	336532	Q2146570	Reudnitz (Leipzig)	Reudnitz,_Neu-	9	None	4165	Reudnitz, Neu-	0
+452:	337152	Q6467	Dohma	Dohma	0	11039			4
+453:	337162	Q8232	Reinhardtsdorf-Schöna	Reinhardtsdorf-Schöna	0	11284			1
+454:	337179	Q71151	Sayda	Sayda	0	16096			4
+455:	337185	Q46753	Erlbach (Markneukirchen)	Erlbach_(2)	15	None	19032	Erlbach (2)	1
+456:	337191	Q10743	Böhlen (Sachsen)	Böhlen_(2)	8	None	4013	Böhlen (2)	4
+457:	337195	Q10747	Deutzen	Deutzen	0	1036			1
+458:	337197	Q10749	Espenhain	Espenhain	0	1047			1
+459:	337199	Q695624	Eulatal	Eulatal	0	1048			1
+460:	337200	Q10763	Frohburg	Frohburg	0	1055			4
+461:	337203	Q1549432	Großlehna	Großlehna	0	31006			1
+462:	337208	Q10750	Großpösna	Großpösna	0	4155			1
+463:	337213	Q315466	Heuersdorf	Heuersdorf	0	1084			1
+464:	337227	Q10769	Kohren-Sahlis	Kohren-Sahlis	0	1097			1
+465:	337229	Q703880	Lobstädt	Lobstädt	0	1110			1
+466:	337230	Q10753	Narsdorf	Narsdorf	0	1126			1
+467:	337233	Q10755	Neukieritzsch	Neukieritzsch	0	1093			1
+468:	337235	Q10773	Pegau	Pegau	0	1147			1
+469:	337600	Q160231	Jänkendorf	Jänkendorf	0	28035			1
+470:	338189	Q1109887	Collm	Collm	0	5031			1
+471:	338368	Q6787	Kreischa	Kreischa_(1)	4	None	7074	Kreischa (1)	4
+472:	338393	Q8239	Schmiedeberg (Dippoldiswalde)	Schmiedeberg	17	None	7123	Schmiedeberg	1
+473:	338821	Q572891	Geising	Geising (Alt-, Neu-)	13	7045			16
+474:	339490	Q6775	Höckendorf (Klingenberg)	Höckendorf (1)	11	None	7066	Höckendorf (1)	4
+475:	339520	Q6710	Hartmannsdorf-Reichenau	Hartmannsdorf-Reichenau	0	7143			1
+476:	339528	Q6724	Hermsdorf/Erzgeb.	Hermsdorf/Erzgeb.	0	7063			4
+477:	339743	Q57725	Börnichen/Erzgeb.	Börnichen/Erzgeb.	0	15008			1
+478:	339745	Q57729	Borstendorf	Floßmühle	11	None	15021	Floßmühle	1
+479:	339746	Q57776	Grünhainichen	Grünhainichen	0	15032			1
+480:	339751	Q57749	Drebach	Drebach	0	18005			1
+481:	339755	Q1600062	Scharfenstein (Drebach)	Scharfenstein	10	None	18076	Scharfenstein	1
+482:	339761	Q58015	Venusberg (Drebach)	Venusberg	10	None	18090	Venusberg	1
+483:	339763	Q57761	Gornau/Erzgeb.	Gornau/Erzgeb.	0	15028			1
+484:	339767	Q57769	Großolbersdorf	Großolbersdorf	0	18058			1
+485:	339773	Q57773	Großrückerswalde	Großrückerswalde	0	18070			1
+486:	339776	Q57779	Heidersdorf	Heidersdorf	0	16047			1
+487:	339781	Q57817	Pfaffroda	Pfaffroda_(2)	4	None	16085	Pfaffroda (2)	1
+488:	339785	Q57822	Pockau	Pockau	0	18060			1
+489:	339804	Q57997	Wolkenstein (Erzgebirge)	Kohlau	23	None	18038	Kohlau	4
+490:	339809	Q58000	Zöblitz	Zöblitz	0	18100			4
+491:	339819	Q71095	Burgstädt	Burgstädt	0	6012			1
+492:	339823	Q70942	Claußnitz	Claußnitz	0	6017			1
+493:	339836	Q71123	Hainichen	Hainichen_(3)	4	None	2080	Hainichen (3)	1
+494:	340183	Q542005	Hilbersdorf (Bobritzsch-Hilbersdorf)	Hilbersdorf (2)	22	None	16054	Hilbersdorf (2)	1
+495:	341001	Q57924	Lugau	Lugau	0	14061			4
+496:	341013	Q57753	Erlbach-Kirchberg	Erlbach-Kirchberg	0	14109			1
+497:	341728	Q46777	Neumark (Vogtland)	Neumark	11	None	22087	Neumark	1
+498:	342433	Q46801	Steinberg (Vogtland)	Steinberg_(1)	9	13125			1
+499:	342729	Q46885	Mylau	Mylau	0	20069			1
+500:	344643	Q2678141	Döbernitz	Döbernitz	0	30035			1
+501:	344695	Q57790	Jahnsdorf/Erzgeb.	Jahnsdorf/Erzgeb.	0	14048			1
+502:	344698	Q57782	Hohndorf	Hohndorf_(4)	4	None	17042	Hohndorf (4)	1
+503:	344708	Q57765	Gornsdorf	Gornsdorf	0	14035			1
+504:	344716	Q71050	Seelitz	Seelitz_(2)	4	None	6131	Seelitz (2)	1
+505:	344730	Q991571	Niederschöna	Niederschöna	0	16099			1
+506:	344786	Q71025	Oberschöna	Oberschöna	0	16100			1
+507:	344804	Q542078	Falkenau (Flöha)	Hetzdorf_(3)	14	None	15037	Hetzdorf (3)	1
+508:	344816	Q535565	Frankenstein (Oederan)	Frankenstein	10	None	15023	Frankenstein	1
+509:	344821	Q1491140	Gahlenz	Gahlenz	0	15024			1
+510:	344841	Q70957	Großhartmannsdorf	Großhartmannsdorf	0	16043			1
+511:	345831	Q8915	Gorbitz	Gorbitz,_Nieder-	9	None	8074	Gorbitz, Nieder-	1
+512:	346275	Q71009	Mulda/Sa.	Mulda/Sa.	0	16076			1
+513:	346279	Q71064	Weißenborn/Erzgeb.	Weißenborn/Erzgeb.	0	16128			1
+514:	346378	Q71005	Mühlau (Sachsen)	Mühlau	10	None	6096	Mühlau	1
+515:	346392	Q71057	Taura	Reitzenhain_(1)_(Nieder-,_Ober-)	30	None	6115	Reitzenhain (1) (Nieder-, Ober-)	1
+516:	346425	Q70969	Hartmannsdorf (bei Chemnitz)	Hartmannsdorf_(2)	13	None	6055	Hartmannsdorf (2)	1
+517:	346438	Q70975	Königsfeld (Sachsen)	Königsfeld	10	None	6070	Königsfeld	1
+518:	347169	Q573537	Syrau	Syrau	0	20127			1
+519:	347194	Q46816	Weischlitz	Weischlitz	0	20142			1
+520:	347226	Q46880	Mühltroff	Mühltroff	0	20068			4
+521:	347677	Q70981	Königshain-Wiederau	Topfseifersdorf	15	None	6133	Seifersdorf, Topf-	1
+522:	347698	Q70994	Lichtenau (Sachsen)	Lichtenau_(1)	8	None	15050	Lichtenau (1)	1
+523:	347711	Q71046	Rossau (Sachsen)	Rossau,_Ober-	9	None	6122	Rossau, Ober-	1
+524:	347729	Q71060	Wechselburg	Wechselburg	0	6157			1
+525:	347739	Q71068	Zettlitz	Zettlitz	0	6174			1
+526:	347749	Q71111	Geringswalde	Geringswalde	0	6041			4
+527:	347767	Q71104	Frankenberg/Sa.	Frankenberg/Sa.	0	15022			4
+528:	348508	Q1738517	Kemnitz (Dresden)	Kemnitz_(1)	8	None	8097	Kemnitz (1)	1
+529:	348615	Q46757	Grünbach (Sachsen)	Grünbach,_Höhenluftkurort	16	None	13033	Grünbach, Höhenluftkurort	1
+530:	348654	Q695636	Hammerbrücke	Hammerbrücke	0	13036			1
+531:	348765	Q915219	Briesnitz (Dresden)	Briesnitz	10	None	8017	Briesnitz	1
+532:	349099	Q46804	Theuma	Theuma	0	20130			1
+533:	349115	Q46760	Heinsdorfergrund	Heinsdorfergrund	0	20153			1
+534:	349126	Q649405	Leubnitz (Rosenbach)	Leubnitz_(2)	10	None	20056	Leubnitz (2)	1
+535:	349133	Q46764	Limbach (Vogtland)	Limbach_(4)	9	None	13058	Limbach (4)	1
+536:	349149	Q46823	Werda	Werda (1)	4	None	13113	Werda (1)	1
+537:	349158	Q46773	Neuensalz	Neuensalz	0	20111			1
+538:	349166	Q46766	Mühlental	Mühlental	0	19149			1
+539:	349176	Q57786	Hormersdorf (Zwönitz)	1=Hormersdorf	12	None			1
+540:	349180	Q46784	Neustadt/Vogtl.	Neustadt/Vogtl.	0	13070			1
+541:	349182	Q57804	Neukirchen/Erzgeb.	Neukirchen/Erzgeb.	0	14067			1
+542:	349186	Q57810	Niederdorf (Sachsen)	Niederdorf	10	None	14070	Niederdorf	1
+543:	349187	Q57813	Niederwürschnitz	Niederwürschnitz	0	14103			1
+544:	349189	Q57929	Oelsnitz/Erzgeb.	Oelsnitz/Erzgeb.	0	14073			4
+545:	349196	Q57955	Stollberg/Erzgeb.	Stollberg/Erzgeb.	0	14094			4
+546:	349200	Q57993	Thalheim/Erzgeb.	Thalheim/Erzgeb.	0	14096			4
+547:	349206	Q699351	Tannenbergsthal	Tannenbergsthal/Vogtl.	7	None	13104	Tannenbergsthal/Vogtl.	1
+548:	356057	Q159916	Kleinwelka	Welka,_Klein-,_Kolonie	16	23321			1
+549:	358444	Q989984	Gerichshain	Gerichshain	0	3077			1
+550:	362795	Q2098230	Planitz	Planitz, Ober-	7	None	22097	Planitz, Ober-	1
+551:	364195	Q1536934	Gompitz (Ortsteil)	Gompitz	11	8071			1
+552:	368167	Q1471942	Gaschwitz	Gaschwitz	0	4057			1
+553:	371164	Q10768	Kitzscher	Kitzscher	0	1094			4
+554:	371173	Q57837	Seiffen/Erzgeb.	Steinhübel (2)	13	None	16111	Steinhübel (2)	1
+555:	372511	Q663464	Altranstädt	Altranstädt	0	31014			4
+556:	373997	Q27479035	Kleinschirma	Kleinschirma	0	16098			1
+557:	374277	Q1453830	Freibergsdorf	Freibergsdorf	0	16029			1
+558:	375367	Q883725	Graditz	Graditz	0	30069			1
+559:	376518	Q228257	Zug (Freiberg)	Zug	11	None	16134	Zug	1
+560:	377044	Q1625522	Holzhau	Holzhau	0	7068			1
+561:	380383	Q2139856	Reick	Reick	0	8189			1
+562:	380469	Q2582415	Wilmsdorf (Bannewitz)	Wilmsdorf	12	None	7136	Wilmsdorf	4
+563:	389095	Q1773946	Kleinwaltersdorf	Kleinwaltersdorf	0	16123			1
+564:	389103	Q1747733	Loßnitz (Freiberg)	Loßnitz_(Nieder-)	6	None	16068	Loßnitz (Nieder-)	1
+565:	393502	Q2447490	Trachenberge	Trachenberge	0	8225			1
+566:	397275	Q2239556	Schleußig	Schleußig	0	4173			1
+567:	399527	Q1406432	Posta (Pirna)	Posta,_Ober-	8	None	11183	Posta, Ober-	4
+568:	399570	Q2011373	Obervogelgesang	Obervogelgesang	0	11248			4
+569:	399574	Q1988717	Niedervogelgesang	Niedervogelgesang	0	11247			4
+570:	399605	Q691655	Copitz	Copitz	0	11027			4
+571:	399624	Q1981000	Neundorf (Pirna)	Neundorf_(3)	6	None	11161	Neundorf (3)	4
+572:	399653	Q230729	Zuschendorf	Zuschendorf	0	11269			4
+573:	399667	Q1316701	Rottwerndorf	Rottwerndorf	0	11212			4
+574:	399673	Q184505	Zehista	Zehista	0	11264			4
+575:	401544	Q1942956	Mohsdorf	Mohsdorf	0	6095			4
+576:	403736	Q1788925	Krietzschwitz	Krietzschwitz	0	11124			4
+577:	411566	Q160815	Taubenheim/Spree	Taubenheim/Spree	0	27133			1
+578:	416924	Q436630	Altenbach (Bennewitz)	Altenbach	12	None	3002	Altenbach	1
+579:	421201	Q510509	Muldenhütten	Muldenhütten	0	16077			1
+580:	422051	Q1495887	Gau Nisan	Bulsitz_(Bultzsch,_Poltz)	23	None	8172	Bulsitz (Bultzsch, Poltz)	0
+581:	422822	Q1417284	Miltitz (Leipzig)	Miltitz_(1)	8	None	4122	Miltitz (1)	1
+582:	423628	Q2140053	Reifland	Reifland	0	18063			1
+583:	436250	Q1069503	Chemnitz-Einsiedel	Einsiedel	9	None	14023	Einsiedel	4
+584:	441238	Q697455	Arnsfeld	Oberschaar_(1)	13	12002			1
+585:	444402	Q227243	Zschernitz	Zschernitz	0	30252			1
+586:	446838	Q15096988	Goßdorf	Goßdorf	0	11075			1
+587:	446841	Q15096994	Waitzdorf	Waitzdorf	0	11249			1
+588:	446842	Q15096990	Lohsdorf (Hohnstein)	Lohsdorf	12	None	11140	Lohsdorf	1
+589:	446843	Q12354399	Rathewalde	Rathewalde	0	11195			1
+590:	446845	Q27116840	Hohburkersdorf	Hohburkersdorf	0	11023			1
+591:	446847	Q27116261	Zeschnig	Zeschnig	0	11266			1
+592:	452642	Q1312715	Grünstädtel	Grünstädtel	0	21033			1
+593:	454291	Q1981666	Neustadt (Leipzig)	Neustadt_(5)	8	None	4136	Neustadt (5)	1
+594:	454300	Q882826	Schönefeld (Leipzig)	Schönefeld_(2)	8	None	4177	Schönefeld (2)	1
+595:	460822	Q10719651	Kreckwitz	Kreckwitz	0	23141			4
+596:	467075	Q1353061	Waschleithe	Waschleithe	0	21085			4
+597:	491155	Q1336962	Strehlen (Dresden)	Strehlen	10	None	8218	Strehlen	1
+598:	501985	Q8949	Plauen (Dresden)	Plauen_(1)	8	None	8169	Plauen (1)	1
+599:	511726	Q382181	Affalter	Affalter	0	21001			1
+600:	513514	Q22692873	Lonnewitz	Lonnewitz	0	5103			1
+601:	514157	Q8742	Moritzburg (Sachsen)	Moritzburg	10	None	8139	Moritzburg	1
+602:	515483	Q1701968	Südvorstadt (Leipzig)	Brandvorwerk	18	None	4017	Brandvorwerk	1
+603:	527098	Q1397387	Fasendorf	Fasendorf	0	20020			1
+604:	530902	Q1910617	Spitzkunnersdorf	Spitzkunnersdorf	0	29040			1
+605:	532216	Q1918169	Meinsberg	Meinsberg	0	2142			4
+606:	532239	Q1409041	Neuwürschnitz	Neuwürschnitz	0	14102			1
+607:	533246	Q582810	Lindenau (Oberlausitz)	Lindenau (Oberlausitz)	0	25053			1
+608:	537187	Q884793	Burg Schweinsburg	Burg Schweinsburg	0	None			0
+609:	542238	Q2258727	Schönbach (Colditz)	Schönbach_(1)	8	None	3222	Schönbach (1)	1
+610:	547485	Q457486	Sieniawka	Kleinschönau	9	None	29077	Schönau, Klein-	4
+611:	547543	Q2461546	Turoszów	Türchau	6	None	29085	Türchau	4
+612:	549222	Q160222	Groß Radisch	Großradisch	2	None	28089	Radisch, Groß	1
+613:	558125	Q1019100	Bärenfels	Bärenfels, Kurort	8	None	7003	Bärenfels, Kurort	4
+614:	562119	Q1601241	Heinzebank	Heinzebank	0	18026			1
+615:	563709	Q12355895	Thürmsdorf	Thürmsdorf	0	11242			1
+616:	566352	Q1470872	Grund (Wilsdruff)	Grund	12	None	8080	Grund	1
+617:	570254	Q2637402	Albernau	Albernau	0	21004			1
+618:	570397	Q1867643	Lockwitz	Lockwitz	0	8120			1
+619:	571081	Q822034	Bermsgrün	Bermsgrün	0	21011			1
+620:	572023	Q906364	Breitenhof	Breitenhof	0	21017			1
+621:	573989	Q1538724	Gotha (Jesewitz)	Gotha	11	None	30067	Gotha	1
+622:	577737	Q881221	Krzewina (Bogatynia)	Grunau_(3)	16	None	29018	Grunau (3)	1
+623:	578629	Q301249	Nischwitz (Thallwitz)	Nischwitz	12	None	3170	Nischwitz	1
+624:	581943	Q1117567	Volkmarsdorf	Volkmarsdorf	0	4203			1
+625:	587406	Q1546480	Griesbach (Schneeberg)	Griesbach	13	None	21030	Griesbach	1
+626:	588083	Q1261720	Dröschkau	Dröschkau	0	30045			1
+627:	592250	Q1892391	Marbach (Striegistal)	Marbach_(2)	12	None	2136	Marbach (2)	1
+628:	597439	Q1016556	Burkhardtsgrün (Zschorlau)	Burkhardtsgrün_(1)	10	None	21019	Burkhardtsgrün (1)	1
+629:	597771	Q2592349	Wolfsgrün	Wolfsgrün_(1)	4	None	21090	Wolfsgrün (1)	1
+630:	599046	Q2360795	Stötteritz	Stötteritz	0	4194			1
+631:	602598	Q1665368	Wernesgrün	Wernesgrün	0	13114			1
+632:	607828	Q1775093	Kloster Buch	Buch,_Kloster-	11	None	2024	Buch, Kloster-	0
+633:	612893	Q1631961	Obergruna	Obergruna	0	10097			1
+634:	612902	Q2563198	Wernitzgrün	Wernitzgrün	0	19136			1
+635:	621844	Q159867	Wehrsdorf	Wehrsdorf	0	23314			1
+636:	624813	Q1530646	Laubusch	Laubusch	0	25049			1
+637:	625137	Q160230	Schwarzkollm	Schwarzkollm	0	25042			4
+638:	627121	Q8933	Laubegast	Laubegast	0	8106			1
+639:	630612	Q2340849	Steinheidel	Steinheidel	0	21080			1
+640:	647366	Q502488	Obercunnersdorf	Obercunnersdorf_(2)	4	None	27018	Cunnersdorf, Ober- (2)	4
+641:	651570	Q1069495	Chemnitz-Ebersdorf	Ebersdorf_(1)	13	None	14021	Ebersdorf (1)	1
+642:	654523	Q1760578	Sohl (Bad Elster)	Sohl_(Ober-,_Unter-)	11	None	19119	Sohl (Ober-, Unter-)	4
+643:	657085	Q923608	Brockau	Brockau	0	20004			1
+644:	660426	Q442359	Altleisnig	Altleisnig	0	2124			1
+645:	667838	Q1128144	Constappel	Constappel	0	10044			1
+646:	667931	Q177052	Hohenbocka	Hohenbocka	0	25009			1
+647:	680485	Q1827495	Lippersdorf	Lippersdorf	0	18048			1
+648:	681946	Q1913759	Maxen	Maxen	0	11144			4
+649:	685448	Q110653	Unkersdorf	Unkersdorf	0	10335			1
+650:	687225	Q879866	Leutzsch	Leutzsch	0	4106			1
+651:	688490	Q2795540	Puschwitz (Belgern-Schildau)	Puschwitz_(2)	17	None	30172	Puschwitz (2)	1
+652:	689779	Q814083	Beerendorf	Beerendorf	0	30012			1
+653:	697352	Q851418	Beutha	Beutha	0	22008			1
+654:	705414	Q583468	Tettau (Brandenburg)	Tettau (Brandenburg)	0	None			1
+655:	705442	Q2010321	Oberlosa	Oberlosa	0	20061			1
+656:	717197	Q162591	Rohne (Oberlausitz)	Rohne	14	None	28095	Rohne	1
+657:	733124	Q3952	Plauen	Plauen_(2)	4	None	20082	Plauen (2)	6
+658:	738335	Q57921	Lößnitz (Erzgebirge)	Lößnitz_(1)	11	None	21047	Lößnitz (1)	4
+659:	741930	Q355595	Adelwitz	Adelwitz	0	30001			1
+660:	742600	Q1750755	Kössern	Kössern	0	None			1
+661:	742799	Q1630590	Hosterwitz	Hosterwitz	0	8091			1
+662:	743533	Q1300749	Ehrenzipfel	Ehrenzipfel	0	21116			1
+663:	745983	Q46789	Pöhl	Pöhl	0	20083			1
+664:	748722	Q8926	Kleinzschachwitz	Kleinzschachwitz	0	8253			1
+665:	761725	Q160688	Doberschau	Doberschau	0	23068			1
+666:	767489	Q1319247	Oberhermersdorf	Oberhermersdorf	0	14043			1
+667:	767771	Q1587151	Harthau (Oberwiera)	Harthau_(3)	10	None	17035	Harthau (3)	1
+668:	770538	Q1531909	Großdeuben	Großdeuben	0	4035			1
+669:	778866	Q1815646	Leipziger Vorstadt	Leipziger Vorstadt	0	None			4
+670:	782288	Q1789940	Schönbach (Sebnitz)	Schönbach_(5)	8	None	11222	Schönbach (5)	4
+671:	785118	Q1416584	Leppersdorf (Wachau)	Leppersdorf	9	None	8109	Leppersdorf	1
+672:	791161	Q1826037	Lindenau (Leipzig)	Lindenau_(3)	8	None	4108	Lindenau (3)	1
+673:	803784	Q2246629	Schmorsdorf	Schmorsdorf	0	11220			4
+674:	806894	Q2120701	Pölbitz	Pölbitz	0	22099			1
+675:	815497	Q160668	Uhyst am Taucher	Uhyst a. Taucher	1	23309			1
+676:	819225	Q1043371	Carlsfeld (Eibenstock)	Carlsfeld	13	None	21020	Carlsfeld	1
+677:	822273	Q160197	Weinhübel	Weinhübel_(bis_1936_Leschwitz)	21	None	24032	Weinhübel (bis 1936 Leschwitz)	1
+678:	823387	Q1897673	Marieney	Marieney	0	19082			1
+679:	824456	Q6698	Gohrisch	Papstdorf	9	None	11172	Papstdorf	4
+680:	841632	Q995614	Bräunsdorf (Oberschöna)	Zechendorf	19	None	16132	Zechendorf	1
+681:	842644	Q902077	Braunsdorf (Niederwiesa)	Braunsdorf_(2)	12	None	15010	Braunsdorf (2)	1
+682:	847589	Q57744	Deutschneudorf	Deutschneudorf	0	16080			4
+683:	848106	Q1651390	Wilischthal	Wilischthal	0	15095			1
+684:	848690	Q15096923	Gersdorf (Bahretal)	Gersdorf_(7)	9	None	11063	Gersdorf (7)	1
+685:	849170	Q2453060	Triestewitz	Triestewitz	0	30218			1
+686:	852790	Q1230076	Rippien	Rippien	0	8193			4
+687:	857258	Q160238	Weifa	Weifa	0	23318			1
+688:	857393	Q1481785	Wiesenbad	Wiesenbad	0	12066			1
+689:	864881	Q1069519	Chemnitz-Hilbersdorf	Hilbersdorf_(1)	13	None	14044	Hilbersdorf (1)	1
+690:	865147	Q160335	Neustadt/Spree	Neustadt_(3)	6	None	25071	Neustadt (3)	1
+691:	867702	Q2431912	Tiefensee (Bad Düben)	Tiefensee	12	None	30214	Tiefensee	4
+692:	868194	Q12353084	Naundorf (Struppen)	Naundorf_(21)	9	None	11153	Naundorf (21)	1
+693:	870742	Q1270886	Döben (Grimma)	Döben	9	None	3055	Döben	4
+694:	873176	Q1544494	Grechwitz	Grechwitz	0	3084			1
+695:	873184	Q1981047	Neunitz	Neunitz	0	3168			1
+696:	886503	Q162603	Tröbigau	Tröbigau	0	23304			1
+697:	892110	Q27479037	Wegefarth	Wegefarth	0	16126			1
+698:	892119	Q15058358	Pappendorf	Pappendorf	0	2185			4
+699:	892138	Q20825716	Auerswalde	Auerswalde	0	15003			1
+700:	892177	Q8904	Dölzschen	Dölzschen	0	8038			1
+701:	893624	Q1476966	Wahren	Wahren	0	4206			1
+702:	902440	Q468073	Amerika (Penig)	Amerika	8	None	6200	Amerika	1
+703:	913796	Q2162243	Rohna (Sachsen)	Rohna	10	None	26110	Rohna	1
+704:	914086	Q61533513	Wolkenburg-Kaufungen	Wolkenburg-Kaufungen	0	6182			1
+705:	914090	Q2177990	Rußdorf (Limbach-Oberfrohna)	Rußdorf_(1)	19	None	14084	Rußdorf (1)	1
+706:	914092	Q2009648	Oberfrohna	Oberfrohna	0	14030			1
+707:	916732	Q2245846	Schmannewitz	Schmannewitz	0	5183			1
+708:	918686	Q1497367	Lauterbach (Stolpen)	Lauterbach_(5)	8	None	11128	Lauterbach (5)	4
+709:	919801	Q160601	Kleinröhrsdorf	Kleinröhrsdorf	0	8196			1
+710:	929103	Q1019230	Bärnsdorf	Bärnsdorf_(1)	4	None	9003	Bärnsdorf (1)	1
+711:	929914	Q895567	Boxdorf (Moritzburg)	Boxdorf	13	None	8014	Boxdorf	1
