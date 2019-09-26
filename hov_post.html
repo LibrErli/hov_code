@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>hov_post</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="sächsische-ortsdaten-in-der-linked-open-data-cloud-teilautomatisierte-anreicherung-und-analyse-der-hov-id-in-wikidata">Sächsische Ortsdaten in der Linked Open Data Cloud: Teilautomatisierte Anreicherung und Analyse der HOV-ID in Wikidata </h1>
+
+<p><em>„Unser Ziel ist es daher, dem Prinzip der Linked Data folgend, die verschiedenen Identifikatoren stärker aufeinander zu beziehen, um eine übergreifende Recherche in unterschiedlichen Systemen zu ermöglichen, die jeweils eine andere dieser Nummern für identische Objekte verwenden. Ein geeignetes Mittel dafür: die Datenobjekte in der freien Onlinedatenbank Wikidata.‟</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+
+<p>Wie im zitierten Blogpost von Martin Munke vorgestellt, kann seit Juli 2019 die ID des Historischen Ortsverzeichnisses von Sachsen (HOV) in Wikidata eingetragen und abgefragt werden. Mit Mix‘n‘Match besteht ein gutes Tool um kollaborativ Verknüpfungen zwischen bestehenden Wikidata-Einträgen und der HOV-ID herstellen zu können. Bei den einzutragenden über 5.000 HOV-Codes ein durchaus ambitioniertes aber gemeinschaftlich sicher zu bewältigendes Unterfangen.</p>
+
+<h2 id="bringing-hov-id-to-wikidata">Bringing HOV-ID to Wikidata</h2>
+<p>Technikaffine Menschen stellen sich wohl die berechtigte Frage, ob es nicht Möglichkeiten gibt – und natürlich gibt es diese – um einen Abgleich der HOV-Einträge mit Wikidata stärker zu automatisieren. Ein sehr beliebtes Tool stellt dabei <a href="http://openrefine.org/">OpenRefine</a> dar, welches einerseits zur Aufbereitung tabellarischer Daten sehr gut geeignet ist und anderseits im Zusammenspiel mit Wikidata die Optionen der Reconciliation und des Uploads von großen Datenmengen bereitstellt. Mit Reconciliaton können Werte aus den lokalen Daten in OpenRefine gegen Wikidata abgeglichen werden, best-match Kandidaten werden dann dem jeweiligen Datensatz zugeordnet. Mit OpenRefine ließe sich das vorhandene <a href="https://tools.wmflabs.org/mix-n-match/#/catalog/2729">Datenset der HOV-ID</a> sicherlich sehr gut bearbeiten, für die Endbearbeitung und Abstimmung der Reconciliation gegen Wikidata ist aber auch wieder eine gute (inhaltliche) Kenntnis der Daten notwendig, damit die HOV-Codes nicht zu falschen (bswp. gleichlautenden Orten) Items geschrieben werden.</p>
+
+<h2 id="linking-hov-wikidata-using-wikipedia">Linking HOV-Wikidata using Wikipedia</h2>
+<p>Für diesen Blogpost wird aber eine andere Variante der automatisierten Verlinkung zwischen Wikidata und dem HOV vorgestellt. In der deutschsprachigen Wikipedia existiert die <a href="https://de.wikipedia.org/wiki/Vorlage:HOV">Vorlage:HOV</a>. Mit diesem Template bestehen auf ca. 3.400<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Wikipedia-Artikeln Verlinkungen ins HOV. </p>
+
+<figure>
+<img src="./post-img/Pictures/10000201000002B200000037D084CE20F65732E1.png" style="width:15.198cm;height:1.212cm" alt="" /><figcaption><br />
+Abbildung 1: Funktionsweise der Wikipedia Vorlage:HOV</figcaption>
+</figure>
+<p>Durch Hinzufügen eines knappen Code-Blocks im Wikitext wie in gezeigt, wird auf einer Wikipedia-Seite ein Link ins „Digitale Historische Ortsverzeichnis von Sachsen‟ erzeugt. Ein Vorteil auf diesen strukturierten Datenbestand in Wikipedia zurückzugreifen liegt sicherlich darin, dass die Einbindung in Wikipedia prinzipiell vertrauenswürdig erscheint, ist es doch der Community jederzeit möglich, entsprechende Fehler zu korrigieren. </p>
+<p>Die Idee ist nun, ein Skript zu entwickeln, welches den Parameterwert aus den verlinkten Wikpedia-Artikeln ausliest und die Verlinkung nach Wikidata herstellt. Grundsätzlich besteht für die Übernahme von Vorlagen-Parameter aus Wikipedia-Artikeln nach Wikidata die Software <a href="https://tools.wmflabs.org/pltools/harvesttemplates/">HarvestTemplates</a>. Da aber in der Wikipedia-Vorlage der Name des Ortes zur Verlinkung verwendet wird und in Wikidata der numerische Code genützt wird, kann dieses Tool nicht eingesetzt werden.</p>
+
+<p>Um von der HOV-Vorlage der Wikiepdia zu einem nach Wikidata importfähigen Datensatz zu gelangen sind folgende Schritte notwendig:</p>
+<ol type="1">
+<li>Abfrage aller Wikpedia-Artikel in denen die Vorlage:HOV eingebunden ist. Dies wird über eine mediawiki-API Abfrage realisiert.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
+<li>Mit zwei weiteren API-Abfragen wird einerseits der gesamte Wikitext des Artikels geholt und andererseits die zum Wikipedia-Artikel gehörende Wikdata-ID ausgelesen.</li>
+<li>Aus dem Wikitext wird die Vorlage:HOV extrahiert und der Parameterwert, d.h. der Ortsname, gespeichert.</li>
+<li>Mit der Wikidata-ID des Artikels wird überprüft, ob es sich bei dem Wikipedia-Artikel überhaupt um einen Artikel zu einem Ort handelt. Die Vorlage wird nämlich auf unterschiedlichen Seiten (bspw. Listen von Straßennamen oder historische Abhandlungen) eingesetzt. Gleichzeitig dient die Wikidata-ID auch als Ziel für den späteren Import der HOV-ID</li>
+<li>Um den HOV-Code zu erhalten, wird mit dem vorliegenden Parameter die Seite hov.isgv.de/{Ortsname} aufgerufen und der im Quelltext erhaltene HOV-Code ausgelesen und gespeichert. Gleichzeitig wird auch die Ansetzungsform des Ortsnamens von der HOV-Website übernommen, um diesen später als Qualifier im Wikidata-Statement zu verwenden.</li>
+<li>Da nicht sichergestellt werden kann, dass die HOV-Vorlage genau jenen Ort verlinkt, der auch auf der Wikipediaseite beschrieben wurde, wird ein Vergleich zwischen den Namen im HOV und der Wikipedia mittels Levenshtein-Distanz<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> ermittelt. In weiterer Folge wurden einmal nur jene HOV-Codes nach Wikidata eingespielt, die bei dieser Berechnung eine völlig Übereinstimmung, d.h. eine Levenshtein-Distanz von 0 aufweisen.</li>
+<li>Für alle Datensätze mit Levenshtein-Distanz = 0 wird ein <a href="https://tools.wmflabs.org/quickstatements/#/">QuickStatements</a> Importstring geschrieben, dieser setzt sich aus der Wikidata-ID des Ortes, der Property für den HOV-Code (P7046), dem HOV-Code, und einer weiteren Property „stated as‟ (P1932) und der Ansetzungsform des Ortsnamens auf der HOV-Website zusammen.<br />
+Bsp (Werte durch Tabulator getrennt):<br />
+<em>Q10770P7046"4161"P1932"Ranstädt, Mark-"</em></li>
+<li><p>Das Skript liefert somit zwei Ergebnisse:</p>
+<ol type="a">
+<li>Eine Tabelle mit allen Wikipedia-Artikeln, den korrespondieren Wikidata-Ids, HOV-Code, HOV-Ansetzungsform, ein Wert ob in Wikidata der HOV-Code bereits verknüpft wurde, und die Levenshtein-Distanz zwischen Ortsname auf der Wikipedia und in HOV.</li>
+<li>Eine Datei mit den Importstrings für QuickStatements.</li>
+</ol></li>
+</ol>
+
+<p>Der Import von 1.360 HOV-Codes wurde am 22. August 2019 durchgeführt.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> Mit der Gesamtergebnistabelle können nun weitere Einträge kontrolliert und gegebenenfalls für einen Import mittels QuickStatements vorbereitet werden. Einträge mit einer geringen Levenshtein-Distanz (zb. &lt; 5) können in einem Tabellekalkulationsprogramm gefiltert und en bloc kontrolliert werden. </p>
+<p>Der Eintrag des Qualifiers „stated as‟ mag in vielen Fällen als hochgradig redundante Information angesehen werden. (vgl. ) Bietet aber gerade im gegenständlichen Fall eine vielleicht nicht ganz sinnlose Ergänzung an. Denn im HOV werden beispielsweise Orte mit üblichen Präfixen wie „Ober-‟, „Nieder-‟, „Groß-‟ oder „Klein-‟ immer nach dem Hauptbestandteil das Wortes sortiert. Durch diese Notation in Wikidata entsteht somit auch eine gewisse doppelte Sicherheit eines nachhaltigen Einstiegs in den Datenbestand des HOV in Wikidata zu besitzen.</p>
+
+<figure>
+<img src="./post-img/Pictures/100002010000035A000000A93FA1CF21F31C8F18.png" style="width:13.61cm;height:2.681cm" alt="" /><figcaption><br />
+Abbildung 2: HOV-ID als Statement in Wikidata</figcaption>
+</figure>
+<p>Mix‘n‘Match ist trotz der hier gezeigten individuell erstellten Programmiermethode oder dem genannten OpenRefine eine höchst nützliche und sinnvolle Ergänzung. Denn die bereits über 1.300 automatisch verknüpften HOV-Codes werden auch in Mix‘n‘Match als zusammengeführt angezeigt und es bleibt somit immer ein praktisches Monitoring-Tool um beispielsweise noch fehlende Einträge zu erkennen. Darüber hinaus bietet Mix‘n‘Match bei der Zusammenführung von Wikidataeinträgen außerhalb des Tools auch eine Überprüfung, ob die gematchten Werte auch einem etwaigen Vorschlag in Mix‘n‘Match entsprechen und zeigt etwaige Unstimmigkeiten auf.</p>
+<h2 id="analyzing-hov-with-wikidata">Analyzing HOV with Wikidata</h2>
+<p>Das Verzeichnen eines Normdatenwertes in Wikidata bietet verschiedene Vorteile. Beispielsweise können mittels der Normdatei grundlegende strukturierte Informationen (bspw. mehrsprachige Beschreibungen) aus Wikidata in lokale Applikationen abgerufen werden oder es lassen sich die Verknüpfungen zu anderen Wikimedia-Projekten (Wikipedia-Artikeln, Bilder in Commons oder Texte auf Wikisource) herstellen. </p>
+<p>Weiters bietet Wikidata einen ganz spannenden Datenbestand, der es erlaubt unterschiedliche Analysen oder Visualisierungen zu betreiben. Eines der einfachsten aber nicht weniger wirkungs- und effektvollen Analysen ist die Erstellung einer Karte mit Punktwolke wie in gezeigt.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
+<figure>
+<img src="./post-img/Pictures/10000201000002AB000001D9027EDE585484AE29.png" style="width:17cm;height:11.772cm" alt="" /><figcaption><br />
+Abbildung 3: Karte aller Orte mit HOV-ID in Wikidata</figcaption>
+</figure>
+<p>Das Einspielen von Normdaten in Wikidata ist zusätzlich ein wesentlicher Bestandteil dessen, Wikidata als einen der zentralen und wichtigsten Knotenpunkte der vielzähligen weltweiten Normdateien zu entwickeln.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> In welcher Verbindung stehen daher geographische Einträge die mit einer HOV-ID verbunden sind mit anderen Normdateien wie beispielsweise der Gemeinsamen Normdatei oder der offenen Onlinedatenank Geonames?<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
+<p> zeigt, dass es vier Gruppen der Vernetzung zwischen den drei ausgewählten Normdaten in Wikidata gibt, eine große Gruppe an Items mit HOV-ID ist ausschließlich mit einer HOV-ID versehen, zwei Gruppen an Einträgen sind entweder mit HOV-ID und Geonames-ID oder mit HOV-ID und GND versehen; eine vierte Gruppe an Wikidata-Items besitzt bereits eine HOV-ID, eine Geonames-ID und einen GND-Eintrag.</p>
+<figure>
+<img src="./post-img/Pictures/10000201000004000000040036277AE15002A471.png" style="width:17cm;height:17cm" alt="" /><figcaption><br />
+Abbildung 4: Vernetzung zwischen HOV-ID, Geonames-ID und GND</figcaption>
+</figure>
+
+<p>Interessant ist natürlich aber auch die Frage wie die sächsischen Orte mit einer HOV-ID in Wikidata im gesamten Pool aller möglichen anderen Normdateien stehen. Auch eine derartige Gesamtübersicht lässt sich aus Wikidata abfragen und in einem Netzwerkgraph visualisieren. zeigt dieses Netzwerk aus Normdatenverbindungen. Neben dem bereits herausgegriffen starken Teilgraphen aus HOV-Code, Geonames und GND spielt auch die VIAF-ID wenig verwunderlich eine starke Rolle. Ablesbar ist beispielsweise, dass es nach wie vor eine große Gruppe an Einträgen gibt, die nur den HOV-Code als Identifikator im Datensatz aufweisen. Dies kann natürlich inhaltlich entweder mit der speziellen inhaltlichen Ausrichtung des historischen Ortsverzeichnisses erklärt werden oder auf einen noch offenen Arbeitsaufwand hinweisen.</p>
+<figure>
+<img src="./post-img/Pictures/10000201000006EA000006303707DEEBA091E5EC.png" style="width:17cm;height:15.214cm" alt="" /><figcaption><br />
+Abbildung 5: Wikidata-Items mit HOV-Code im Netz aller anderen dieser Einträge zugewiesenen Normdateien</figcaption>
+</figure>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p><span id="ZOTERO_ITEM CSL_CITATION {&quot;citationID&quot;:&quot;F9f71DN6&quot;,&quot;properties&quot;:{&quot;formattedCitation&quot;:&quot;Munke, Martin: Historische Orte mit offenen Daten: HOV + Wikidata, Billet, Saxorum, &lt;https://saxorum.hypotheses.org/2775&gt;, Stand: 23.08.2019.&quot;,&quot;plainCitation&quot;:&quot;Munke, Martin: Historische Orte mit offenen Daten: HOV + Wikidata, Billet, Saxorum, &lt;https://saxorum.hypotheses.org/2775&gt;, Stand: 23.08.2019.&quot;,&quot;noteIndex&quot;:1},&quot;citationItems&quot;:[{&quot;id&quot;:209,&quot;uris&quot;:[&quot;http://zotero.org/users/4768843/items/SWJ3PY6G&quot;],&quot;uri&quot;:[&quot;http://zotero.org/users/4768843/items/SWJ3PY6G&quot;],&quot;itemData&quot;:{&quot;id&quot;:209,&quot;type&quot;:&quot;webpage&quot;,&quot;title&quot;:&quot;Historische Orte mit offenen Daten: HOV + Wikidata&quot;,&quot;container-title&quot;:&quot;Saxorum&quot;,&quot;genre&quot;:&quot;Billet&quot;,&quot;abstract&quot;:&quot;Ortsdaten bieten wichtigen Zugang zur Lokal-, Regional- und Landesgeschichte. Sie bilden die Bevölkerungsentwicklung, administrative Strukturen, Verfassungsverhältnisse und viele andere Aspekte der historischen Entwicklung ab. In Bibliotheken und anderen Kultur- und Wissenschaftseinrichtungen werden Normdaten verwendet, um diese Geografika (Ortsnamen, Beschreibungen) und … Weiterlesen →&quot;,&quot;URL&quot;:&quot;https://saxorum.hypotheses.org/2775&quot;,&quot;title-short&quot;:&quot;Historische Orte mit offenen Daten&quot;,&quot;language&quot;:&quot;de-DE&quot;,&quot;author&quot;:[{&quot;family&quot;:&quot;Munke&quot;,&quot;given&quot;:&quot;Martin&quot;}],&quot;accessed&quot;:{&quot;date-parts&quot;:[[&quot;2019&quot;,8,23]]}}}],&quot;schema&quot;:&quot;https://github.com/citation-style-language/schema/raw/master/csl-citation.json&quot;} RND0rsJDiPNHo"></span>Munke, Martin: Historische Orte mit offenen Daten: HOV + Wikidata, Billet, Saxorum, &lt;https://saxorum.hypotheses.org/2775&gt;, Stand: 23.08.2019.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>Anzahl der Einbindungen der Vorlage: <a href="https://tools.wmflabs.org/templatecount/index.php?lang=de&amp;namespace=10&amp;name=HOV#bottom">https://tools.wmflabs.org/templatecount/index.php?lang=de&amp;namespace=10&amp;name=HOV#bottom</a>, Stand: 23.08.2019<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p><a href="https://de.wikipedia.org/w/api.php?action=query&amp;list=embeddedin&amp;eititle=Template:HOV&amp;eilimit=10&amp;format=json">https://de.wikipedia.org/w/api.php?action=query&amp;list=embeddedin&amp;eititle=Template:HOV&amp;eilimit=</a><a href="https://de.wikipedia.org/w/api.php?action=query&amp;list=embeddedin&amp;eititle=Template:HOV&amp;eilimit=10&amp;format=json">1</a><a href="https://de.wikipedia.org/w/api.php?action=query&amp;list=embeddedin&amp;eititle=Template:HOV&amp;eilimit=10&amp;format=json">0&amp;format=json</a> <a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>Die Levenshtein-Distanz misst den Unterschied zwischen zwei Zeichenketten als Summe der einzelnen Bearbeitungsschritte um von einen String zum zweiten zu gelangen. Von „Hallo‟ auf „Hello‟ muss das a durch ein e ersetzt werden – 1 Schritt somit ist die Distanz 1. (vgl. <a href="https://de.wikipedia.org/wiki/Levenshtein-Distanz">https://de.wikipedia.org/wiki/Levenshtein-Distanz</a>) <a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p><a href="https://tools.wmflabs.org/quickstatements/#/batch/17719">https://tools.wmflabs.org/quickstatements/#/batch/17719</a> <a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6" role="doc-endnote"><p>SPARQL-Query zur Karte abrufbar unter: https://w.wiki/7PX<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7" role="doc-endnote"><p><span id="ZOTERO_ITEM CSL_CITATION {&quot;citationID&quot;:&quot;bBY661PX&quot;,&quot;properties&quot;:{&quot;formattedCitation&quot;:&quot;Neubert, Joachim: Wikidata as a Linking Hub for Knowledge Organization Systems? Integrating an Authority Mapping into Wikidata and Learning Lessons for KOS Mappings, in: Proceedings of the 17th European Networked Knowledge Organization Systems Workshop, 2017. Online: &lt;http://ceur-ws.org/Vol-1937/paper2.pdf&gt;, Stand: 13.03.2019.&quot;,&quot;plainCitation&quot;:&quot;Neubert, Joachim: Wikidata as a Linking Hub for Knowledge Organization Systems? Integrating an Authority Mapping into Wikidata and Learning Lessons for KOS Mappings, in: Proceedings of the 17th European Networked Knowledge Organization Systems Workshop, 2017. Online: &lt;http://ceur-ws.org/Vol-1937/paper2.pdf&gt;, Stand: 13.03.2019.&quot;,&quot;noteIndex&quot;:7},&quot;citationItems&quot;:[{&quot;id&quot;:146,&quot;uris&quot;:[&quot;http://zotero.org/users/4768843/items/NYW9ICK9&quot;],&quot;uri&quot;:[&quot;http://zotero.org/users/4768843/items/NYW9ICK9&quot;],&quot;itemData&quot;:{&quot;id&quot;:146,&quot;type&quot;:&quot;paper-conference&quot;,&quot;title&quot;:&quot;Wikidata as a Linking Hub for Knowledge Organization Systems? Integrating an Authority Mapping into Wikidata and Learning Lessons for KOS Mappings&quot;,&quot;container-title&quot;:&quot;Proceedings of the 17th European Networked Knowledge Organization Systems Workshop&quot;,&quot;event&quot;:&quot;NKOS 2017&quot;,&quot;URL&quot;:&quot;http://ceur-ws.org/Vol-1937/paper2.pdf&quot;,&quot;author&quot;:[{&quot;family&quot;:&quot;Neubert&quot;,&quot;given&quot;:&quot;Joachim&quot;}],&quot;issued&quot;:{&quot;date-parts&quot;:[[&quot;2017&quot;]]},&quot;accessed&quot;:{&quot;date-parts&quot;:[[&quot;2019&quot;,3,13]]}}}],&quot;schema&quot;:&quot;https://github.com/citation-style-language/schema/raw/master/csl-citation.json&quot;} RNDuE6DZMRPd9"></span>Neubert, Joachim: Wikidata as a Linking Hub for Knowledge Organization Systems? Integrating an Authority Mapping into Wikidata and Learning Lessons for KOS Mappings, in: Proceedings of the 17th European Networked Knowledge Organization Systems Workshop, 2017. Online: &lt;http://ceur-ws.org/Vol-1937/paper2.pdf&gt;, Stand: 13.03.2019.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8" role="doc-endnote"><p>Abfrage aller Wikidata-Items mit HOV-Code und wenn vorhanden Geonames oder GND-ID (<a href="https://w.wiki/7bZ">https://w.wiki/7bZ</a>)<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>
